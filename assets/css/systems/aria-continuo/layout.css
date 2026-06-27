@@ -38,11 +38,6 @@ a {
 	transition: var(--aria-transition-time) var(--aria-transition-timing);
 	color: var(--aria-text-link);
 	text-decoration: none
-	/* font-family: Roboto, "Open Sans", "Microsoft YaHei", "Helvetica Neue", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-	-webkit-transition: all .24s ease;
-	transition: all .24s ease;
-	color: #333;
-	text-decoration: none */
 }
 
 a:active,
@@ -157,17 +152,6 @@ input[type=password] {
 	z-index: 999;
 	opacity: .5;
 	background-color: rgba(255, 255, 255, .6)
-	/* position: fixed;
-	width: 100vw;
-	height: 100vh;
-	-webkit-transition: all .5s ease;
-	-moz-transition: all .5s ease;
-	-ms-transition: all .5s ease;
-	-o-transition: all .5s ease;
-	transition: all .5s ease;
-	z-index: 999;
-	opacity: .5;
-	background-color: rgba(255, 255, 255, .6) */
 }
 
 #nav-menu,
@@ -175,8 +159,6 @@ input[type=password] {
 .card {
 	-webkit-transition: .5s;
 	-ms-transition: all .5s ease
-	/* -webkit-transition: all .5s ease;
-	-ms-transition: all .5s ease */
 }
 
 #nav-menu,
@@ -186,11 +168,6 @@ input[type=password] {
 	-moz-transition: .5s;
 	-o-transition: .5s;
 	transition: .5s
-	/* position: fixed;
-	z-index: 110;
-	-moz-transition: all .5s ease;
-	-o-transition: all .5s ease;
-	transition: all .5s ease */
 }
 
 #nav-menu {
@@ -199,11 +176,6 @@ input[type=password] {
 	-webkit-box-shadow: var(--aria-shadow-nav);
 	box-shadow: var(--aria-shadow-nav);
 	background-color: var(--aria-bg-glass-light)
-	/* width: 100%;
-	height: 64px;
-	-webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .06), 0 4px 5px 0 rgba(0, 0, 0, .06), 0 1px 10px 0 rgba(0, 0, 0, .08);
-	box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .06), 0 4px 5px 0 rgba(0, 0, 0, .06), 0 1px 10px 0 rgba(0, 0, 0, .08);
-	background: #fff */
 }
 
 /* #nav-menu:hover {
@@ -213,13 +185,10 @@ input[type=password] {
 #nav-menu.headroom--top {
 	background-color: var(--aria-bg-glass-light);
 	box-shadow: initial
-	/* background-color: rgba(255, 255, 255, .2);
-	box-shadow: initial */
 }
 
 #nav-menu.headroom--not-top {
 	background-color: var(--aria-bg-glass-medium) !important
-	/* background-color: #fff !important */
 }
 
 #nav-menu a,
@@ -654,9 +623,6 @@ body.aria-style-aria-continuo #nav-menu #nav-btns i:hover {
 	-moz-transition: var(--aria-transition-time) var(--aria-transition-timing);
 	-o-transition: var(--aria-transition-time) var(--aria-transition-timing);
 	transition: var(--aria-transition-time) var(--aria-transition-timing)
-	/* -moz-transition: all .5s ease;
-	-o-transition: all .5s ease;
-	transition: all .5s ease */
 }
 
 .card:hover {
@@ -744,20 +710,99 @@ body.aria-style-aria-continuo #nav-menu #nav-btns i:hover {
 }
 
 /* ==========================================================================
-   Aria Continuo
-   Triggered by body.aria-style-aria-continuo body class
+   文章卡片
    ========================================================================== */
 
-/* 文章卡片悬浮动画 */
+body.aria-style-aria-continuo #main article {
+    background: rgba(250, 250, 250, 0.85);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: var(--aria-radius-sm);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 20px rgba(0, 0, 0, 0.05);
+    margin: 36px auto;
+    padding: 20px;
+}
+
 body.aria-style-aria-continuo .card {
-    transition: transform var(--aria-transition-time) var(--aria-transition-timing), 
-                box-shadow var(--aria-transition-time) var(--aria-transition-timing) !important;
+    transition: transform var(--aria-duration-normal) var(--aria-ease-out),
+                box-shadow var(--aria-duration-normal) var(--aria-ease-out);
 }
 
 body.aria-style-aria-continuo .card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.12), 
-                0 4px 12px -4px rgba(0, 0, 0, 0.08) !important;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06), 0 12px 32px rgba(0, 0, 0, 0.06);
+}
+
+body.aria-style-aria-continuo .card-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 6px;
+}
+
+body.aria-style-aria-continuo .card-meta-top {
+    margin: 0 0 12px;
+}
+
+body.aria-style-aria-continuo .card-meta-cate,
+body.aria-style-aria-continuo .card-meta-date {
+    color: var(--aria-text-muted);
+    font-size: 0.82rem;
+}
+
+body.aria-style-aria-continuo .card-thumbnail {
+    border-radius: var(--aria-radius-sm);
+    box-shadow: inset 0 -80px 40px -70px rgba(0, 0, 0, 0.3);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: block;
+    height: 320px;
+    width: 100%;
+    margin: 0 auto 12px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: background-size var(--aria-duration-normal) var(--aria-ease-out);
+}
+
+body.aria-style-aria-continuo .card-thumbnail:hover {
+    background-size: 105% auto;
+}
+
+body.aria-style-aria-continuo .card-body {
+    color: var(--aria-text-main);
+    overflow: hidden;
+    margin-bottom: 8px;
+    margin-top: 0;
+    margin-left: 0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+body.aria-style-aria-continuo .card-line {
+    height: 0;
+    margin: 8px 0 10px;
+    border-bottom: 1px solid var(--aria-border-color);
+}
+
+body.aria-style-aria-continuo .card-meta-bottom {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body.aria-style-aria-continuo .card-meta-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    vertical-align: middle;
+    margin-left: 14px;
+    color: var(--aria-text-muted);
+    font-size: 0.82rem;
+    line-height: 1.4;
+}
+
+body.aria-style-aria-continuo .card-meta-label:first-child {
+    margin-left: 0;
 }
 
 /* 顶部导航栏 (Nav) 的阴影与模糊参数 */
@@ -793,14 +838,8 @@ body.aria-style-aria-continuo #search-box {
     backdrop-filter: blur(20px) saturate(120%);
     -webkit-backdrop-filter: blur(20px) saturate(120%);
 }
-/*
- * Aria Continuo: 顶栏二级下拉菜单
- *
- * - 面板先显现，再从顶栏下缘滑出
- * - 菜单项逐项入场，形成自上而下展开的层次
- * - 模糊强度参与状态变化，不做静态透明板
- * - hover 时由选项自身向左探出，直接响应指针位置
- */
+
+/* 顶栏二级下拉菜单 */
 
 body.aria-style-aria-continuo .nav-right-item {
     overflow: visible;

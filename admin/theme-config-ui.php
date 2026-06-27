@@ -371,10 +371,10 @@ function ariaRenderThemeConfigIssuesPanel(array $issues)
 function ariaRenderThemeConfigIntro()
 {
     echo '<div class="tip"><span class="current-ver"><strong><code>Ver ' . ARIA_VERSION . '</code></strong></span>
-    <div class="tip-header"><h1>Aria-Continuo</h1></div>
+    <div class="tip-header"><h1>Aria Continuo</h1></div>
     <p>感谢选择使用 <code>Aria</code> / <code>Aria Continuo</code></p>
-    <p>帮助手册（Aria）：<a href="https://github.com/Siphils/Typecho-Theme-Aria/wiki" target="_blank">Wiki</a>（Continuo 暂无）</p>
-    <p>Aria：<a href="https://github.com/Siphils/Typecho-Theme-Aria/issues" target="_blank">Issues</a> <a href="https://github.com/Siphils/Typecho-Theme-Aria/pulls" target="_blank">PR</a> ｜ Continuo：<a href="https://github.com/SweetenedSuzuka/Typecho-Theme-Aria-Continuo/issues" target="_blank">Issues</a> <a href="https://github.com/SweetenedSuzuka/Typecho-Theme-Aria-Continuo/pulls" target="_blank">PR</a></p>
+    <p>帮助手册（Aria）：<a href="https://github.com/Siphils/Typecho-Theme-Aria/wiki" target="_blank">Wiki</a>（Aria Continuo 暂无）</p>
+    <p>Aria：<a href="https://github.com/Siphils/Typecho-Theme-Aria/issues" target="_blank">Issues</a> <a href="https://github.com/Siphils/Typecho-Theme-Aria/pulls" target="_blank">PR</a> ｜ Aria Continuo：<a href="https://github.com/SweetenedSuzuka/Typecho-Theme-Aria-Continuo/issues" target="_blank">Issues</a> <a href="https://github.com/SweetenedSuzuka/Typecho-Theme-Aria-Continuo/pulls" target="_blank">PR</a></p>
     <p style="position:absolute;right:5px;bottom:5px;display:flex;gap:0.5em;align-items:center;">';
     ariaRenderThemeConfigTransferButtons();
     echo '<button id="check-update" class="btn primary">检查更新</button></p>

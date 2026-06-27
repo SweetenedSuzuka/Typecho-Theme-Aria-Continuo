@@ -1,202 +1,171 @@
-.error-page {
-    margin-bottom: 30px;
+/* ==========================================================================
+   404 页面
+   ========================================================================== */
+
+/* 主容器垂直水平居中 */
+body.aria-style-aria-continuo .error-page-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 460px;
+    padding: 40px 0;
 }
 
-.error-page-search-input {
-    padding: 10px;
-}
-
-.error-page-search-actions {
+/* 内容区 */
+body.aria-style-aria-continuo .error-page {
     text-align: center;
-}
-
-.error-page-search-submit {
-    max-width: 200px;
-    width: 50%;
-}
-
-.archives-page {
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
-    margin-top: 40px;
-    padding: 15px;
-}
-
-.archives-page #archives-tags,
-.archives-page #archives-categories {
-    margin: 30px 0;
-    position: relative;
-}
-
-.archives-page #archives-tags > div,
-.archives-page #archives-categories > div {
-    color: rgba(0, 0, 0, 0.6);
-    font-size: 2.5rem;
-    margin: 0 0 20px;
-    padding: 0 0 0 20px;
-    position: relative;
-    text-shadow: 0 0 5px #b2b2b2;
-}
-
-.archives-page #archives-tags-list,
-.archives-page #archives-cate-list {
-    margin: 0;
-    padding: 0 0 0 40px;
-}
-
-.archives-page .archives-tags-item,
-.archives-page .archives-cate-item {
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 0 5px 5px 0;
-    display: inline-block;
-    font-size: 15px;
-    height: 15px;
-    line-height: 15px;
-    list-style: none;
-    margin: 4px 6px;
-    padding: 5px 8px;
-    position: relative;
-    word-break: break-all;
-}
-
-.archives-page .archives-tags-item::before,
-.archives-page .archives-cate-item::before {
-    border-bottom: 12.5px solid transparent;
-    border-right: 10px solid rgba(0, 0, 0, 0.6);
-    border-top: 12.5px solid transparent;
-    content: "";
-    height: 0;
-    left: -10px;
-    position: absolute;
-    top: 0;
-    width: 0;
-}
-
-.archives-page .archives-tags-item::after,
-.archives-page .archives-cate-item::after {
-    background-color: #f2f2f2;
-    border-radius: 50%;
-    content: "";
-    height: 4px;
-    left: -4px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 4px;
-}
-
-.archives-page .archives-tags-item > a,
-.archives-page .archives-cate-item > a {
-    color: #fff;
-}
-
-.archives-page #timeline-container {
-    position: relative;
-}
-
-.archives-page #timeline-container::before {
-    background-color: #dcdcdc;
-    content: "";
-    height: 100%;
-    left: 73px;
-    position: absolute;
-    top: 10px;
-    width: 4px;
-    z-index: -1;
-}
-
-.archives-page .timeline-ym {
-    background-color: #6f6f6f;
-    border-radius: 20px;
-    display: inline-block;
-    font-size: 1rem;
-    height: 32px;
-    left: 10px;
-    line-height: 32px;
-    margin: 10px 0;
-    padding: 0 12px;
-    position: relative;
-}
-
-.archives-page .timeline-ym a {
-    color: #fff;
-}
-
-.archives-page .timeline-box {
-    padding-left: 90px;
-    position: relative;
-}
-
-.archives-page .timeline-box::before {
-    background-color: #8a8a8a;
-    border-radius: 50%;
-    color: #fff;
-    content: "";
-    height: 20px;
-    left: 65px;
-    line-height: 20px;
-    position: absolute;
-    text-align: center;
-    top: 5.5px;
-    width: 20px;
-}
-
-.archives-page .timeline-post {
-    border-radius: 4px;
-    display: block;
-    font-size: 0.95rem;
-    line-height: 2rem;
-    margin: 5px 0 5px 15px;
-    min-height: 2rem;
-    padding: 0;
-    position: relative;
-}
-
-.archives-page .timeline-post::before {
-    background-color: #f2f2f2;
-    border-radius: 50%;
-    content: "";
-    height: 12px;
-    left: -36px;
-    position: absolute;
-    top: 9.5px;
-    transition: all 0.5s ease;
-    width: 12px;
-}
-
-.archives-page .timeline-post:hover::before {
-    background-color: #474747;
-}
-
-.archives-page .timeline-post a {
-    position: relative;
-}
-
-.archives-page .timeline-post a::after {
-    background: #6f6f6f;
-    bottom: -5px;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 0;
-    position: absolute;
-    transition: all 0.5s ease-in-out;
-    width: 0;
-}
-
-.archives-page .timeline-post a:hover::after {
+    max-width: 540px;
     width: 100%;
+    margin-bottom: 0;
 }
 
-.archives-page .timeline-post-time {
-    color: #6f6f6f;
-    font-family: Consolas;
-    font-size: 0.9rem;
-    left: -80px;
-    position: absolute;
-    top: 0;
+/* 标题 */
+body.aria-style-aria-continuo .error-page-title {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--aria-text-heading);
+    margin-bottom: 8px;
+    line-height: 1.4;
 }
+
+/* 自定义背景图下启用多层辉光 */
+body.aria-style-aria-continuo.body--custom-background .error-page-title {
+    text-shadow:
+        0 0 4px rgba(255, 255, 255, 0.6),
+        0 0 12px rgba(255, 255, 255, 0.3),
+        0 0 28px rgba(255, 255, 255, 0.15);
+}
+
+/* 描述文字 */
+body.aria-style-aria-continuo .error-page-desc {
+    font-size: 0.92rem;
+    color: var(--aria-text-muted);
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+/* 表单承载面 */
+body.aria-style-aria-continuo .error-page-form {
+    background: rgba(248, 249, 251, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: var(--aria-radius-md);
+    padding: 24px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12), 0 8px 18px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(28px) saturate(120%);
+    -webkit-backdrop-filter: blur(28px) saturate(120%);
+}
+
+/* 搜索框 */
+body.aria-style-aria-continuo .error-page-search-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 14px;
+    border: 1px solid var(--aria-border-color);
+    border-radius: var(--aria-radius-sm);
+    font-size: 0.95rem;
+    color: var(--aria-text-main);
+    background: #fff;
+    box-shadow: none;
+    transition: border-color var(--aria-duration-fast) var(--aria-ease-in-out),
+                box-shadow var(--aria-duration-fast) var(--aria-ease-in-out);
+    margin: 0;
+}
+
+body.aria-style-aria-continuo .error-page-search-input::placeholder {
+    color: var(--aria-text-muted);
+    opacity: 0.7;
+}
+
+body.aria-style-aria-continuo .error-page-search-input:focus {
+    border-color: var(--aria-color-primary);
+    box-shadow: 0 0 0 3px rgba(251, 114, 153, 0.12);
+    outline: none;
+}
+
+/* 操作区 */
+body.aria-style-aria-continuo .error-page-search-actions {
+    margin-top: 16px;
+}
+
+/* 搜索按钮 */
+body.aria-style-aria-continuo .error-page-search-submit {
+    display: inline-block;
+    padding: 8px 28px;
+    border: none;
+    border-radius: var(--aria-radius-sm);
+    background: var(--aria-color-primary);
+    color: #fff;
+    font-size: 0.92rem;
+    cursor: pointer;
+    box-shadow: none;
+    text-shadow: none;
+    max-width: none;
+    width: auto;
+    transition: background var(--aria-duration-fast) var(--aria-ease-in-out),
+                transform var(--aria-duration-fast) var(--aria-ease-in-out);
+}
+
+body.aria-style-aria-continuo .error-page-search-submit:hover {
+    background: var(--aria-color-primary-hover);
+    transform: translateY(-1px);
+}
+
+body.aria-style-aria-continuo .error-page-search-submit:active {
+    transform: translateY(0);
+}
+
+/* 返回首页 */
+body.aria-style-aria-continuo .error-page-home-link {
+    display: block;
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    color: var(--aria-text-muted);
+    font-size: 0.88rem;
+    text-decoration: none;
+    transition: color var(--aria-duration-fast) var(--aria-ease-in-out);
+}
+
+body.aria-style-aria-continuo .error-page-home-link:hover {
+    color: var(--aria-text-main);
+}
+
+/* 入场动画 */
+@keyframes aria-error-fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body.aria-style-aria-continuo .error-page-title {
+    animation: aria-error-fade-in-up 500ms var(--aria-ease-out) 200ms both;
+}
+
+body.aria-style-aria-continuo .error-page-desc {
+    animation: aria-error-fade-in-up 500ms var(--aria-ease-out) 400ms both;
+}
+
+body.aria-style-aria-continuo .error-page-form {
+    animation: aria-error-fade-in-up 500ms var(--aria-ease-out) 600ms both;
+}
+
+/* 尊重用户偏好：减少动画 */
+@media (prefers-reduced-motion: reduce) {
+    body.aria-style-aria-continuo .error-page-title,
+    body.aria-style-aria-continuo .error-page-desc,
+    body.aria-style-aria-continuo .error-page-form {
+        animation: none;
+    }
+}
+
+/* ==========================================================================
+   归档页
+   ========================================================================== */
 
 .archive-header {
     border-radius: 5px;
