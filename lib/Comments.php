@@ -345,6 +345,7 @@ class Comments
         $osName = null;
         if (preg_match('/Windows NT 6.0/i', $ua)) {
             $os = "Windows Vista";
+            $osName = "Windows Vista";
             $fontClass = "windows";
         } elseif (preg_match('/Windows NT 6.1/i', $ua)) {
             $os = "Windows 7";
