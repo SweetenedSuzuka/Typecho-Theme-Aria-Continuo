@@ -42,8 +42,6 @@ function createDirectory(container, mountPoint) {
     var headings = children(element.childNodes, /^h[2-3]$/);
     var result = [];
 
-    (Math.random() + "").replace(/\D/, "");
-
     while (headings.length) {
       heading = headings.shift();
       textStore.push(heading.textContent || heading.innerText || "");
