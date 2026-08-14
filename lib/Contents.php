@@ -506,7 +506,7 @@ class Contents
             'name' => '',
         ), $atts);
         $href = $args['href'] ? 'href="' . $args['href'] . '"' : "";
-        return '<a ' . $href . 'title="' . $args['title'] . '" target="_blank"><div class="link-item"><img class="link-avatar" src="' . $args['img'] . '"><span class="link-name">' . $args['name'] . '</span></div></a>';
+        return '<a ' . $href . ' title="' . $args['title'] . '" target="_blank"><div class="link-item"><img class="link-avatar" src="' . $args['img'] . '"><span class="link-name">' . $args['name'] . '</span></div></a>';
     }
 
     /**
